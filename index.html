@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title> World Scrammble Challange </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+     </head>
+  <body>
+    <header>
+      <h1>Word Scrammble Challange</h1>
+    </header>
+    <main>
+     <section id ="welcome-screen">
+  <input type="text" id= "username" placeholder = "Enter Username to begin">
+    <button id = "start-button">Start Game</button>
+     </section>
+      
+      <section id= "game screen" class = "hidden"> 
+        <div id = "stats">
+       <p> Timer: <span id = "timer">60</span>seconds</p>
+       <p> Score : <span id = "Score">0</span></p>
+       </div>
+      <div id = "game-area">
+      <p id = "instructions">Solve the word before the time runs out!</p> 
+        <div id="scrambled-word"></div>
+        <input type = "text" id= "user-guess" placeholder = "Your guess"> 
+        <button id = "submit-button">Submit</button>
+      </div>
+        <button id = "reset-button">Reset Game</button>
+         </section>
+    </main>
+    <footer>
+      <p> Created For Word Enthuasiats!</p>
+      </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

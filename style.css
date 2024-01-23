@@ -1,0 +1,70 @@
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px ;
+  height: 100%;
+  width: 100%;
+}
+
+#game-screen {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#scrambled-word {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #333;
+  } 
+
+input [type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#timer{
+  color: #d9534f;
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+#score {
+  color: #5cb85c;
+  font-size: 2em;
+  margin: 10 px 0;
+}
+
+.urgent {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50% {
+    background-color: #ff6347;
+  }
+}
+
+@keyframes flashEffect {
+  0%, 100%, background-color : transparent;
+  50% ,background-color : #4CAF50;
+}
+
+.correct-guess {
+  animation: flasheffect 1s;
+}
